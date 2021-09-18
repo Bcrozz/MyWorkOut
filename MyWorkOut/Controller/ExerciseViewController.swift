@@ -289,13 +289,11 @@ class ExerciseViewController: UIViewController {
         
         UDManager.setUDSHistory { [weak self] oldHistoryMG in
             guard let strongSelf = self else {
-                print("History error")
                 return oldHistoryMG
             }
-            oldHistoryMG.addHistory(date: Date(), stepName: strongSelf.exerciseStep.exerciseName, playTime: strongSelf.timerDisplay)
+            oldHistoryMG.addHistory(date: Date(), exerciseName: strongSelf.exerciseStep.exerciseName, playTime: strongSelf.timerDisplay)
             return oldHistoryMG
         }
-        print(UDManager.getUDSHistory().dateAndTime[exerciseVCIndex].timeOfPlay)
         
         historyVC.tableView.reloadData()
         

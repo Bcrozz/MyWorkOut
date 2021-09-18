@@ -53,33 +53,36 @@ extension HistoryViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let count = UDManager.getUDSHistory().dateAndTime.count
-        for index in 0..<count{
-            if section == index{
-                return dateFormatter.string(from: UDManager.getUDSHistory().dateAndTime[index].dateOfPlay)
-            }
-        }
-        return ""
+//        let count = UDManager.getUDSHistory().dateAndTime.count
+//        for index in 0..<count{
+//            if section == index{
+//                return dateFormatter.string(from: UDManager.getUDSHistory().dateAndTime[index].dateOfPlay)
+//            }
+//        }
+//        return ""
+        return dateFormatter.string(from: UDManager.getUDSHistory().dateAndTime[section].dateOfPlay)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = UDManager.getUDSHistory().dateAndTime.count
-        var rowCount = 0
-        for index in 0..<count{
-            if section == index{
-                rowCount = UDManager.getUDSHistory().dateAndTime[section].timeOfPlay.count
-                break
-            }
-        }
-        return rowCount
+//        let count = UDManager.getUDSHistory().dateAndTime.count
+//        var rowCount = 0
+//        for index in 0..<count{
+//            if section == index{
+//                rowCount = UDManager.getUDSHistory().dateAndTime[section].timeOfPlay.count
+//                break
+//            }
+//        }
+//        return rowCount
+        return UDManager.getUDSHistory().dateAndTime[section].timeOfPlay.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HistoryTableViewCell.identifier, for: indexPath) as! HistoryTableViewCell
     
-        let exerciseName = Array(UDManager.getUDSHistory().dateAndTime[indexPath.section].timeOfPlay.keys)[indexPath.row]
+//        let exerciseName = Array(UDManager.getUDSHistory().dateAndTime[indexPath.section].timeOfPlay.keys)[indexPath.row]
+        let exerciseName = UDManager.getUDSHistory().dateAndTime[indexPath.section].timeOfPlay[indexPath.row].getExerciseName()
         
-        let time = Array(UDManager.getUDSHistory().dateAndTime[indexPath.section].timeOfPlay.values)[indexPath.row]
+        let time = UDManager.getUDSHistory().dateAndTime[indexPath.section].timeOfPlay[indexPath.row].getPlayTime()
         cell.setUpTimeLabels(time: time)
         cell.setUpExerciseNameLabels(exerciseName: exerciseName.description)
         cell.setUpLabel()
