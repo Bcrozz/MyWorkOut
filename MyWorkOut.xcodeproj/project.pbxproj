@@ -101,7 +101,6 @@
 			children = (
 				11BB9F2526E9E27D00FE471E /* MyWorkOut */,
 				11BB9F2426E9E27D00FE471E /* Products */,
-				F8AA2BAF5F182FF23C9DB674 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,13 +149,6 @@
 				113EB40B26F2E83A00CFFB06 /* HistoryTableViewCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		F8AA2BAF5F182FF23C9DB674 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
