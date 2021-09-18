@@ -30,12 +30,9 @@
 		11F5066F26F4CED9007D46F4 /* Pushups.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 11F5066926F4CED9007D46F4 /* Pushups.mp4 */; };
 		11F5067026F4CED9007D46F4 /* Squat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 11F5066A26F4CED9007D46F4 /* Squat.mp4 */; };
 		11F5067126F4CED9007D46F4 /* Burpee.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 11F5066B26F4CED9007D46F4 /* Burpee.mp4 */; };
-		5DDDCB73BDEA440EFFE0399E /* Pods_MyWorkOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD0828FFA70FBC3BD25B53F /* Pods_MyWorkOut.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03B224089B697D1869B5E894 /* Pods-MyWorkOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWorkOut.debug.xcconfig"; path = "Target Support Files/Pods-MyWorkOut/Pods-MyWorkOut.debug.xcconfig"; sourceTree = "<group>"; };
-		112409351EBFFC8B57F66DEF /* Pods-MyWorkOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWorkOut.release.xcconfig"; path = "Target Support Files/Pods-MyWorkOut/Pods-MyWorkOut.release.xcconfig"; sourceTree = "<group>"; };
 		113EB40B26F2E83A00CFFB06 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		113EB41026F3557A00CFFB06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		113EB41326F35A8200CFFB06 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -62,7 +59,6 @@
 		11F5066926F4CED9007D46F4 /* Pushups.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pushups.mp4; path = video/Pushups.mp4; sourceTree = SOURCE_ROOT; };
 		11F5066A26F4CED9007D46F4 /* Squat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Squat.mp4; path = video/Squat.mp4; sourceTree = SOURCE_ROOT; };
 		11F5066B26F4CED9007D46F4 /* Burpee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Burpee.mp4; path = video/Burpee.mp4; sourceTree = SOURCE_ROOT; };
-		BBD0828FFA70FBC3BD25B53F /* Pods_MyWorkOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWorkOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DDDCB73BDEA440EFFE0399E /* Pods_MyWorkOut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +102,6 @@
 				11BB9F2526E9E27D00FE471E /* MyWorkOut */,
 				11BB9F2426E9E27D00FE471E /* Products */,
 				F8AA2BAF5F182FF23C9DB674 /* Pods */,
-				DEE36F1FCF85219206656969 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,19 +152,9 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		DEE36F1FCF85219206656969 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0828FFA70FBC3BD25B53F /* Pods_MyWorkOut.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		F8AA2BAF5F182FF23C9DB674 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				03B224089B697D1869B5E894 /* Pods-MyWorkOut.debug.xcconfig */,
-				112409351EBFFC8B57F66DEF /* Pods-MyWorkOut.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -182,7 +166,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11BB9F3726E9E27E00FE471E /* Build configuration list for PBXNativeTarget "MyWorkOut" */;
 			buildPhases = (
-				982AE921178B7DC8D48F95E0 /* [CP] Check Pods Manifest.lock */,
 				11BB9F1F26E9E27D00FE471E /* Sources */,
 				11BB9F2026E9E27D00FE471E /* Frameworks */,
 				11BB9F2126E9E27D00FE471E /* Resources */,
@@ -247,31 +230,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		982AE921178B7DC8D48F95E0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyWorkOut-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11BB9F1F26E9E27D00FE471E /* Sources */ = {
@@ -438,7 +396,6 @@
 		};
 		11BB9F3826E9E27E00FE471E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03B224089B697D1869B5E894 /* Pods-MyWorkOut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,7 +415,6 @@
 		};
 		11BB9F3926E9E27E00FE471E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 112409351EBFFC8B57F66DEF /* Pods-MyWorkOut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
